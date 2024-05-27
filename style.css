@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: blanchedalmond;
+    /* overflow: hidden; */
+
+}
+.container{
+    display: flex;
+}
+.card{
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 3px;
+}
+img{
+    /* height: 500px; */
+    width: 350px;
+    border-radius: 3px;
+    transition: all;
+}
+.intro{
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 49px;
+    background: rgb(27,27,27, .5);
+    color: white;
+    transition: .5s;
+    border-radius: 0px 0px 3px 3px;
+}
+h1{
+    margin: 10px;
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+span{
+    font-weight: bold;
+}
+.card:hover
+{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 280px;
+    bottom: 35px;
+    background-color: black ;
+    border-radius: 0px 90px 3px 3px;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform:scale(1.3)rotate(-10deg) ;
+}
+
+
+
+
+
+
+
+
